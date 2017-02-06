@@ -5,6 +5,7 @@ import java.util.Scanner;
  */
 public class Klasa_liczba {
     private int liczbaWprowadzana;
+    private String liczbaSlownie;
 
     public void setLiczbaWprowadzana(int liczbaWprowadzana) {
         if(liczbaWprowadzana>0 && liczbaWprowadzana<=100) {
@@ -15,7 +16,31 @@ public class Klasa_liczba {
             this.liczbaWprowadzana = -1;
         }
     }
+    public int getLiczbaWprowadzana() {
+        return liczbaWprowadzana;
+    }
+    public void setLiczbaSlownie()
+    {
+        String jeden = "jeden";
+        String dwa = "dwa";
+        String trzy = "trzy";
+        String cztery = "cztery";
+        String piec = "pięć";
+        String szesc = "sześć";
+        String siedem = "siedem";
+        String osiem = "osiem";
+        String dziewiec = "dziewięć";
+        String dziesięc = "dziesięść";
 
+        String nascie = "naście";
+        String dziescia = "dziescia";
+        String dziesci = "dzieści";
+        String dziesiat = "dziesiąt";
+        String zero = "zero";
+        String sto = "sto";
+        String pozaZakres = "Liczba po za zakresem";
+
+    }
     public Klasa_liczba(int liczbaWprowadzana)
     {
         setLiczbaWprowadzana(liczbaWprowadzana);
@@ -28,9 +53,7 @@ public class Klasa_liczba {
        setLiczbaWprowadzana(liczba);
     }
 
-    public int getLiczbaWprowadzana() {
-        return liczbaWprowadzana;
-    }
+
 
 
 }
